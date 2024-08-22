@@ -1,2 +1,2 @@
 
-### [Link](/entity/Link.md)
+### [Link](/entity/link.md)
