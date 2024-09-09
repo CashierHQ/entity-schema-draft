@@ -1,4 +1,4 @@
-### Link
+### Link (Out-dated)
 
 | Property    | Type                      | Description                                 | Example Value                       |
 | ----------- | ------------------------- | ------------------------------------------- | ----------------------------------- |
@@ -6,9 +6,10 @@
 | title       | String                    | Title of the link                           | Motoko Airdrop                      |
 | description | String                    | Brief summary of the action to be performed | This is motoko airdrop              |
 | label       | String                    |                                             |                                     |
-| icon        | String                    | Image for the link                          |                                     |
+| state       | State                     |                                             |                                     |
+| image       | String                    | Image for the link                          |                                     |
 | guards      | [Guard](./guard/guard.md) | Guard for link                              | [example](./guard/guard.md#example) |
-| layout      | [Layout](#layout)         | Layout for render the link                  | [example](#layout)                  |
+| template    | [Template](#template)     | Template for render the link                | [example](#template)                |
 | actions     | [Action](#action) Array   | Array of action                             | [example](#action-example)          |
 | errors      | String                    |                                             |                                     |
 
@@ -51,10 +52,10 @@
 | label    | String  | Label for the button | Claim         |
 | required | boolean | Require of the param | true          |
 
-### Layout
+### Template
 
 ```TS
-enum Layout {
+enum Template {
     Left,
     Right,
     Central

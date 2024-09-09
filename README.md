@@ -1,2 +1,1 @@
-
-### [Link](/entity/link.md)
+### [Link](/entity/link-mvp.md)
