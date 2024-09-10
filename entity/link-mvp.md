@@ -11,7 +11,7 @@
 | actions     | [Action](#action)[]                   | Array of actions                            |                        |
 | template    | [Template](#template)                 | Layout for rendering the link               |                        |
 | state       | [State](#state)                       | Current state of the link                   | Active                 |
-| creator     | ...                                   | ...                                         | ...                    |
+| creator-pid | ...                                   | ...                                         | ...                    |
 
 ```rust
 struct LinkDetail{
@@ -45,7 +45,7 @@ enum Chain {
 struct AssetAirdropInfo{
     address: String,
     chain: Chain,
-    amount: u16,
+    amount: u32,
 }
 ```
 
@@ -61,8 +61,11 @@ struct Action{
 ```
 
 `canisterId` canister id
+
 `label` for render button label
+
 `method` canister method to call
+
 `arg` base64 string of arg input to method
 
 ### Template
@@ -86,6 +89,8 @@ enum State {
     Inactive,
 }
 ```
+
+// TODO: add backend to this diagram
 
 ```mermaid
 flowchart TD
@@ -185,3 +190,5 @@ fn get_links() -> LinkDetail[]
 #### 5. User
 
 // TODO: talk about this
+
+// TODO: Test about user login with google, what props for user
